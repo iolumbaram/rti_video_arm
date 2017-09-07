@@ -1,0 +1,6 @@
+WORKING_DIR = $(shell pwd)/..
+
+INCLUDES =  -I $(WORKING_DIR)/lib/gpio
+COMMONSOURCES = $(WORKING_DIR)/lib/gpio/BlackCore.cpp $(WORKING_DIR)/lib/gpio/BlackADC/BlackADC.cpp $(WORKING_DIR)/lib/gpio/BlackPWM/BlackPWM.cpp 
+
+include ../src/make*
